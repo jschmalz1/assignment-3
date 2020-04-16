@@ -1,10 +1,22 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    background-color: #2d2d2d;
 }
+
+/* type */
+h1{
+    font-size: 57px;
+}
+h3{
+    font-size: 31px;
+    font-weight: 300;    
+}
+
 
 /* *************** header & nav ************** */
 header {
-    background-color: #fff;
+    background-color: #ebebeb;
     padding: 2%;
 }
 
@@ -16,6 +28,10 @@ header {
 header a {
     color: #3f3f3f;
     text-decoration: none;
+}
+
+header p{
+    color: #7d7d7d;
 }
 
 .toggle-icon span {
@@ -34,6 +50,8 @@ header a {
 
 .menu-links a {
     display: block;
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(255,254,255,1) 100%);
 }
 
 
@@ -51,11 +69,87 @@ header nav {
     max-height: 19rem;
     padding-bottom: 1rem;
 }
+.map img{
+    margin: 0 auto;
+}
+
+section{
+    padding: 25px 20px;
+}
+
+section img{
+    margin: 0 auto;
+}
+
+/* banner */
+
+.banner{
+    background-image: url(../img/Bannerbg-small.jpg);
+    height: 200px;
+}
+
+/* quote */
+
+.quote{
+    background-color: #222222;
+    background-image: url(../img/bgcomputer-small.png);
+    height: 320px;
+}
+
+/* Team */
+.team{
+    background-color: #ebebeb;
+    color: #7b7b7b;
+    text-align: center;
+}
+
+.team > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team img{
+    max-width: 165px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Reviews */
+
+.container{
+    background-color: #ebebeb;
+}
+.card{
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #949494;
+    margin-bottom: 20px;
+}
+
+.card p:first-of-type{
+    color: #6017a3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card h4{
+    color: #252525;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card i{
+    color: #6017a3;
+    font-size: 50px;
+}
 
 
-
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
     .toggle-icon {
         display: none;
     }
@@ -80,5 +174,59 @@ header nav {
     .menu-links li:hover {
         background-color: #dde7e9;
         border-radius: 8px;
+    }
+
+    /* banner */
+    .banner{
+        background-image: url(../img/Bannerbg-medium.jpg);
+        height: 400px;
+    }
+
+    /* quote */
+    .quote{
+        background-color: #222222;
+        background-image: url(../img/bgcomputer-medium.png);
+        height: 340px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .toggle-icon {
+        display: none;
+    }
+
+    header nav {
+        max-height: 19rem;
+        position: static;
+        width: auto;
+    }
+
+    .menu-links,
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-links li {
+        padding: 0 5px;
+        margin: 0 3px;
+    }
+
+    .menu-links li:hover {
+        background-color: #dde7e9;
+        border-radius: 8px;
+    }
+
+    /* banner */
+    .banner{
+        background-image: url(../img/bannerbg-large.jpg);
+        height: 550px;
+    }
+
+    /* quote */
+    .quote{
+        background-color: #222222;
+        background-image: url(../img/bgcomputer-large.png);
+        height: 515px;
     }
 }
