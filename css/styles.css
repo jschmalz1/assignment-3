@@ -1,12 +1,26 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
-    background-color: #2d2d2d;
+    background-color: #ebebeb;
+}
+
+
+.inner-container{
+    max-width: 1145px;
+    margin: 0 auto;
+}
+.container-dark{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #373737;
 }
 
 /* type */
 h1{
     font-size: 57px;
+}
+h2{
+    font-size: 31px;
 }
 h3{
     font-size: 31px;
@@ -86,6 +100,18 @@ section img{
 .banner{
     background-image: url(../img/Bannerbg-small.jpg);
     height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner p{
+    font-size: 20px;
+}
+
+.banner > .inner-container{
+    text-align: center;
+    padding-top: 50px;
 }
 
 /* quote */
@@ -93,7 +119,17 @@ section img{
 .quote{
     background-color: #222222;
     background-image: url(../img/bgcomputer-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
     height: 320px;
+    text-align: center;
+    padding-top: 200px;
+}
+.quote p{
+    font-size: 25px;
+}
+.quote p:last-of-type{
+    font-size: 16px;
 }
 
 /* Team */
@@ -120,9 +156,6 @@ section img{
 
 /* Reviews */
 
-.container{
-    background-color: #ebebeb;
-}
 .card{
     max-width: 360px;
     margin: 0 auto;
@@ -181,6 +214,17 @@ section img{
         background-image: url(../img/Bannerbg-medium.jpg);
         height: 400px;
     }
+    h2{
+        font-size: 48px;
+    }
+    .banner p{
+        font-size: 25px;
+    }
+    
+    .banner > .inner-container{
+        text-align: center;
+        padding-top: 100px;
+    }
 
     /* quote */
     .quote{
@@ -222,11 +266,26 @@ section img{
         background-image: url(../img/bannerbg-large.jpg);
         height: 550px;
     }
+    h2{
+        font-size: 61px;
+    }
+    .banner p{
+        font-size: 31px;
+    }
+    
+    .banner > .inner-container{
+        text-align: center;
+        padding-top: 150px;
+    }
 
     /* quote */
     .quote{
         background-color: #222222;
         background-image: url(../img/bgcomputer-large.png);
         height: 515px;
+    }
+
+    .flex-big{
+        display: flex;
     }
 }
